@@ -4,7 +4,7 @@ Less adds more to the functionality of the CSS.
 Variables:
 Example:
 ```html
-<div class="header">I am header</div>
+<div class="header">Header</div>
 ```
 
 ```css
@@ -28,7 +28,7 @@ Example:
 ```
 Example:
 ```html
-<div class="header"></div>
+<div class="header">Header</div>
 ```
 
 ```css
@@ -40,7 +40,7 @@ Example:
 
 Example:
 ```html
-<div class="header"></div>
+<div class="header">Header</div>
 ```
 
 ```css
@@ -115,7 +115,7 @@ Mixins:
 
 Example:
 ```html
-<div class="header"></div>
+<div class="header">Header</div>
 ```
 
 ```css
@@ -135,7 +135,7 @@ Mixins created with parentheses will not be included in the generated CSS file.
 Selectors in mixins
 Example:
 ```html
-<div class="header"></div>
+<div class="header">Header</div>
 ```
 
 ```css
@@ -154,7 +154,7 @@ Namespaces are used to include multiple classes/ids inside a mixin
 
 Example:
 ```html
-<div class="header"></div>
+<div class="header">Header</div>
 ```
 
 ```css
@@ -172,7 +172,7 @@ Parametric Mixins
 Mixins can also take arguments, which are variables passed to the block of selectors when it is mixed in.
 Example:
 ```html
-<div class="header"></div>
+<div class="header">Header</div>
 ```
 
 ```css
@@ -192,7 +192,7 @@ Multiple mixins with the same name and number of parameters.
 
 Example:
 ```html
-<div class="header"></div>
+<div class="header">Header</div>
 ```
 
 ```css
@@ -206,6 +206,23 @@ Example:
 
 .header {
     .mixin(red);
+}
+```
+
+Media Queries:
+Media queries are useful when you want to modify your site or app depending on a device's general type (such as print vs. screen) or specific characteristics and parameters (such as screen resolution or browser viewport width).
+
+Example:
+```html
+<div class="header">Header</div>
+```
+
+```css
+.header {
+    color: red;
+    @media screen and (max-width: 1920px) { 
+        color: purple;
+    }
 }
 ```
 
