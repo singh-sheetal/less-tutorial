@@ -1,4 +1,5 @@
 What is Less?
+
 Less is a preprocessor that adds more to the functionality of the CSS.
 
 Variables:
